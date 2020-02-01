@@ -3378,9 +3378,9 @@ a { outline: none; }
 
 .bg-brand { background-color: #ba2150; color: #fff; }
 
-.header h1 { font-size: 5rem; }
+.marque-header h1 { font-size: 5rem; }
 
-.header a:hover { text-decoration: none; }
+.marque-header a:hover { text-decoration: none; }
 
 samp { color: #ba2150; font-weight: 700; font-family: 'Open Sans', sans-serif; }
 
