@@ -6,7 +6,7 @@ $(function () {
       option.attr('value', locales[i]);
       option.html(locales[i]);
 
-      $('#locales').append(option);
+      $('#choose-locale').append(option);
     }
 
     Example.init({
@@ -56,6 +56,14 @@ $(function () {
               size: 'large'
             });
             Example.show('Large alert shown');
+            break;
+
+          case 'alert-extra-large':
+            bootbox.alert({
+              message: "This is the extra-large alert!",
+              size: 'extra-large'
+            });
+            Example.show('Extra-large alert shown');
             break;
 
           case 'alert-custom-class':
@@ -129,7 +137,7 @@ $(function () {
             break;
 
           case 'confirm-locale':
-            var locale = $('#locales').val();
+            var locale = $('#choose-locale').val();
             bootbox.confirm({
               message: "This confirm uses the selected locale, <b>" + locale + "</b>. Were the labels what you expected?",
               locale: locale,
@@ -363,7 +371,7 @@ $(function () {
           case 'custom-dialog-as-overlay':
             var timeout = 3000; // 3 seconds
             var dialog = bootbox.dialog({
-              message: '<p class="text-center mb-0">Please wait while we do something...</p>',
+              message: '<p class="text-center mb-0"><i class="fas fa-spin fa-cog"></i> Please wait while we do something...</p>',
               closeButton: false
             });
 
@@ -376,7 +384,7 @@ $(function () {
           case 'custom-dialog-init':
             var dialog = bootbox.dialog({
               title: 'A custom dialog with init',
-              message: '<p><i class="fa fa-spin fa-spinner"></i> Loading...</p>'
+              message: '<p><i class="fas fa-spin fa-spinner"></i> Loading...</p>'
             });
 
             dialog.init(function () {
