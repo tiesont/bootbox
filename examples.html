@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Bootbox.js - alert, confirm, prompt, and flexible dialogs for the Bootstrap framework" />
-    <meta name="keywords" content="Bootstrap,bootbox,modal" />
+    <meta name="keywords" content="bootbox,Bootstrap,modal" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     
     <title>Examples &mdash; Bootbox.js &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework</title>
     
@@ -18,151 +23,8 @@
     
 </head>
 <body>
-    <div class="page-wrapper toggled">
-        <nav id="sidebar" class="sidebar-wrapper">
-    <div class="sidebar-content">
-        <!-- sidebar-search  -->
-        <div class="sidebar-search">
-            <form id="search-form">
-                <div class="input-group">
-                    <input type="text" class="form-control search-menu" placeholder="Search..." id="lunrsearch" name="q" maxlength="255" />
-                    <div class="input-group-append">
-                        <button class="btn btn-light" type="submit" id="search-go">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-                <p class="mb-0 text-muted powered-by"><small>Powered by <a href="https://lunrjs.com/" target="_blank">lunr.js</a></small></p>
-            </form>
-            <div id="lunrsearchresults"></div>
-        </div>   
-        <!-- sidebar-menu  -->
-        <div class="sidebar-item sidebar-menu">
-            <ul>
-                <li class="nav-item ">
-                    <a href="./">
-                        <i class="fas fa-home"></i>
-                        <span class="menu-text">Home</span>
-                    </a>
-                </li>
-                <li class="nav-item sidebar-dropdown ">
-                    <a href="#">
-                        <i class="fas fa-code"></i>
-                        <span class="menu-text">Getting Started</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./getting-started.html">Introduction</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#download">Download / Install</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#dependencies">Dependencies</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#usage-instructions">Usage
-                                    Instructions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item sidebar-dropdown active open">
-                    <a href="#">
-                        <i class="far fa-file-code"></i>
-                        <span class="menu-text">Examples</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./examples.html">Overview</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#alert">Alert</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#confirm">Confirm</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#prompt">Prompt</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#dialog">Dialog</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item sidebar-dropdown ">
-                    <a href="#">
-                        <i class="far fa-file-alt"></i>
-                        <span class="menu-text">Documentation</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html">Overview</a>
-                            </li>
-                        </ul>
-                        <h5 class="header-menu">
-                            <span>Dialogs</span>
-                        </h5>
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html#alert">Alert</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#confirm">Confirm</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#prompt">Prompt</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#dialog">Dialog</a>
-                            </li>
-                        </ul>
-                        <h5 class="header-menu">
-                            <span>Configuration</span>
-                        </h5>
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html#dialog-options">Options</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#locales">Locales</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#jquery-functions">Chaining jQuery
-                                    Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#instance-functions">Instance
-                                    Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#global-functions">Global Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#notes">Notes</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a href="./faq.html">
-                        <i class="fas fa-question-circle"></i>
-                        <span class="menu-text">FAQ / Issues</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- sidebar-menu  -->
-    </div>
-</nav>
-
-        <main class="page-content">            
-            <div class="container-fluid">
-                <nav class="d-flex flex-row align-items-center p-3 border-bottom bg-white">
+    <div class="page-wrapper">
+        <nav class="d-flex flex-row align-items-center p-2 border-bottom bg-white sticky-top">
     <div class="">
         <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#">
             <i class="fas fa-bars"></i>
@@ -170,12 +32,21 @@
     </div>
     <div class="flex-fill">
         <nav aria-label="breadcrumb" class="align-items-center">
-            <a href="./" class="text-no-hover"><b class="text-brand">Bootbox</b><span class="text-bb-alt text-thin mr-2">.js</span></a> &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework
+            <a href="./" class="text-no-decoration"><b class="text-brand">Bootbox</b><span class="text-bb-alt text-thin">.js</span></a> &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework
         </nav>
     </div>
-    <div class="text-right text-nowrap">          
+    <div class="text-right text-nowrap mr-2">          
         <nav class="nav nav-navbar">
-            <div class="nav-item dropdown">
+            <a class="nav-item nav-link border-left border-right" href="./getting-started.html">
+                Getting Started
+            </a>
+            <a class="nav-item nav-link border-right" href="./examples.html">
+                Examples
+            </a>
+            <a class="nav-item nav-link border-right" href="./documentation.html">
+                Docs
+            </a>
+            <div class="nav-item dropdown border-right">
                 <a class="nav-link dropdown-toggle" href="#" id="revisions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     v5.4.0
                 </a>
@@ -188,7 +59,7 @@
                     
                 </div>
               </div>
-            <a class="nav-item nav-link text-dark mr-3" href="https://github.com/makeusabrew/bootbox">
+            <a class="nav-item nav-link text-dark border-right mr-3" href="https://github.com/makeusabrew/bootbox">
                 <i class="fab fa-github"></i>
                 GitHub
             </a>
@@ -201,7 +72,9 @@
         </nav>
     </div>
 </nav>
-                
+
+        <main class="page-content">            
+            <div class="container-fluid">                
                 <div class="d-flex flex-row py-3 align-items-stretch">
                     <article class="main-content px-4 mx-auto">
                         <div class="main-content-inner">
@@ -213,10 +86,8 @@
     Have an example you'd like to add? <a href="https://github.com/makeusabrew/bootbox/issues">Open a new issue</a>, or 
     add a <a href="https://github.com/makeusabrew/bootbox/pulls">pull-request</a> with your example added to this page.
 </p>
-
-<hr class="section-divider" />
-
-<article class="topic">
+<div class="bg-white p-5">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="alert" class="topic-anchor">
             Alert
@@ -248,6 +119,17 @@
                         </p>
                         <pre class="language-js line-numbers"><code>bootbox.alert("This is an alert with a callback!", function(){ 
     console.log('This was logged in the callback!'); 
+});</code></pre>
+                    </dd>
+                    <dt id="alert-html-callback" class="bb-anchor h5">Basic usage, using HTML element, with callback</dt>
+                    <dd class="bb-example">
+                        <p>
+                            <button type="button" class="btn btn-primary example-button" data-bb-example-key="alert-html-callback">Run example</button>
+                        </p>
+                        <pre class="language-js line-numbers"><code>let template = $('#alert-message-template');
+                            
+bootbox.alert(template, function () {
+    console.log('This was logged in the callback!');
 });</code></pre>
                     </dd>
                     <dt id="alert-basic-options" class="bb-anchor h5">Basic usage, using options object</dt>
@@ -363,7 +245,7 @@
 
 <hr class="section-divider" />
 
-<article class="topic">           
+    <article class="topic">           
     <header class="topic-header">
         <h2 id="confirm" class="topic-anchor">
             Confirm
@@ -475,7 +357,7 @@ bootbox.confirm({
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="prompt" class="page-anchor">
             Prompt
@@ -834,7 +716,7 @@ bootbox.prompt({
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="dialog" class="topic-anchor">
             Custom Dialogs
@@ -931,52 +813,22 @@ dialog.init(function(){
         </div>
     </div>
 </article>
-
-<div id="bb-growl" class="bb-alert alert alert-info" style="display:none;">
-    <span>The examples populate this alert with dummy content</span>
+</div>
+<div class="d-none">
+    <div id="bb-growl" class="bb-alert alert alert-info" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+    <div id="alert-message-template">Your message <b>here…</b></div>
 </div>
                         </div>
                     </article>
-
-                    <aside class="rightbar align-self-stretch border-left">
-    <div class="rightbar-content py-4">
-        <h4 class="mb-4">
-            <span class="fas fa-question-circle text-primary"></span>
-            Looking for help?
-        </h4>
-        <dl>
-            <dt>Bugs</dt>
-            <dd>
-                <p>
-                    If you think you've found a bug in Bootbox, please <a href="https://github.com/makeusabrew/bootbox/issues">open an issue on Github</a>.
-                    Please take a moment to search existing issues before opening a new issue.
-                </p>
-            </dd>
-
-            <dt>Troubleshooting</dt>
-            <dd>
-                <p>
-                    Need help getting your code to work?
-                    <a href="https://stackoverflow.com/questions/tagged/bootbox" class="text-nowrap text-dark">
-                        <span class="fab fa-stack-overflow text-stack-overflow"></span>
-                        stack<b>overflow</b>
-                    </a> is your best option.
-                </p>
-                <p>
-                    If possible, include a fiddle or Stack Snippet that demonstrates the issue you're
-                    experiencing.
-                </p>
-            </dd>
-        </dl>
-    </div>
-</aside>
                 </div>
             </div>
         </main>
 
         <footer class="page-content">
-            <div class="container-fluid">
-                <div class="border-top py-3 px-4">
+            <div class="text-center container-fluid">
+                <div class="p-4">
                     Bootbox.js &copy; 2011 - 2020 <a href="http://paynedigital.com/about" class="text-bb-brand">Nick Payne</a>. 
                     Syntax highlighting by <a href="https://prismjs.com/" class="text-bb-brand">Prism.js</a> 
                     using <a href="https://andrewlock.net" class="text-bb-brand">Andrew Lock</a>'s Visual Studio theme.
@@ -984,6 +836,146 @@ dialog.init(function(){
             </div>
         </footer>
     </div>
+    <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+        <!-- sidebar-search  -->
+        <div class="sidebar-search">
+            <form id="search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control search-menu" placeholder="Search..." id="lunrsearch" name="q" maxlength="255" />
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit" id="search-go">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="mb-0 powered-by"><small>Powered by <a href="https://lunrjs.com/" class="text-warning" target="_blank">lunr.js</a></small></p>
+            </form>
+            <div id="lunrsearchresults"></div>
+        </div>   
+        <!-- sidebar-menu  -->
+        <div class="sidebar-item sidebar-menu">
+            <ul>
+                <li class="nav-item ">
+                    <a href="./">
+                        <i class="fas fa-home"></i>
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item sidebar-dropdown ">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span class="menu-text">Getting Started</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./getting-started.html">Introduction</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#download">Download / Install</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#dependencies">Dependencies</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#usage-instructions">Usage
+                                    Instructions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item sidebar-dropdown active open">
+                    <a href="#">
+                        <i class="far fa-file-code"></i>
+                        <span class="menu-text">Examples</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./examples.html">Overview</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#alert">Alert</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#confirm">Confirm</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#prompt">Prompt</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#dialog">Dialog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item sidebar-dropdown ">
+                    <a href="#">
+                        <i class="far fa-file-alt"></i>
+                        <span class="menu-text">Documentation</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html">Overview</a>
+                            </li>
+                        </ul>
+                        <h5 class="header-menu">
+                            <span>Dialogs</span>
+                        </h5>
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html#alert">Alert</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#confirm">Confirm</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#prompt">Prompt</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#dialog">Dialog</a>
+                            </li>
+                        </ul>
+                        <h5 class="header-menu">
+                            <span>Configuration</span>
+                        </h5>
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html#dialog-options">Options</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#locales">Locales</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#jquery-functions">Chaining jQuery
+                                    Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#instance-functions">Instance
+                                    Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#global-functions">Global Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#notes">Notes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a href="./faq.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="menu-text">FAQ / Issues</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar-menu  -->
+    </div>
+</nav>
     <div class="bb-scroll-widget">
         <a href="#" class="back-to-top">
             <span class="fa-stack">

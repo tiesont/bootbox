@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Bootbox.js - alert, confirm, prompt, and flexible dialogs for the Bootstrap framework" />
-    <meta name="keywords" content="Bootstrap,bootbox,modal" />
+    <meta name="keywords" content="bootbox,Bootstrap,modal" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     
     <title>Documentation &mdash; Bootbox.js &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework</title>
     
@@ -16,151 +21,8 @@
     
 </head>
 <body>
-    <div class="page-wrapper toggled">
-        <nav id="sidebar" class="sidebar-wrapper">
-    <div class="sidebar-content">
-        <!-- sidebar-search  -->
-        <div class="sidebar-search">
-            <form id="search-form">
-                <div class="input-group">
-                    <input type="text" class="form-control search-menu" placeholder="Search..." id="lunrsearch" name="q" maxlength="255" />
-                    <div class="input-group-append">
-                        <button class="btn btn-light" type="submit" id="search-go">
-                            <i class="fas fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                </div>
-                <p class="mb-0 text-muted powered-by"><small>Powered by <a href="https://lunrjs.com/" target="_blank">lunr.js</a></small></p>
-            </form>
-            <div id="lunrsearchresults"></div>
-        </div>   
-        <!-- sidebar-menu  -->
-        <div class="sidebar-item sidebar-menu">
-            <ul>
-                <li class="nav-item ">
-                    <a href="./">
-                        <i class="fas fa-home"></i>
-                        <span class="menu-text">Home</span>
-                    </a>
-                </li>
-                <li class="nav-item sidebar-dropdown ">
-                    <a href="#">
-                        <i class="fas fa-code"></i>
-                        <span class="menu-text">Getting Started</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./getting-started.html">Introduction</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#download">Download / Install</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#dependencies">Dependencies</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./getting-started.html#usage-instructions">Usage
-                                    Instructions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item sidebar-dropdown ">
-                    <a href="#">
-                        <i class="far fa-file-code"></i>
-                        <span class="menu-text">Examples</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./examples.html">Overview</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#alert">Alert</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#confirm">Confirm</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#prompt">Prompt</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./examples.html#dialog">Dialog</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item sidebar-dropdown active open">
-                    <a href="#">
-                        <i class="far fa-file-alt"></i>
-                        <span class="menu-text">Documentation</span>
-                    </a>
-                    <div class="sidebar-submenu">
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html">Overview</a>
-                            </li>
-                        </ul>
-                        <h5 class="header-menu">
-                            <span>Dialogs</span>
-                        </h5>
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html#alert">Alert</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#confirm">Confirm</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#prompt">Prompt</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#dialog">Dialog</a>
-                            </li>
-                        </ul>
-                        <h5 class="header-menu">
-                            <span>Configuration</span>
-                        </h5>
-                        <ul class="nav-items">
-                            <li>
-                                <a class="nav-link" href="./documentation.html#dialog-options">Options</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#locales">Locales</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#jquery-functions">Chaining jQuery
-                                    Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#instance-functions">Instance
-                                    Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#global-functions">Global Functions</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./documentation.html#notes">Notes</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a href="./faq.html">
-                        <i class="fas fa-question-circle"></i>
-                        <span class="menu-text">FAQ / Issues</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- sidebar-menu  -->
-    </div>
-</nav>
-
-        <main class="page-content">            
-            <div class="container-fluid">
-                <nav class="d-flex flex-row align-items-center p-3 border-bottom bg-white">
+    <div class="page-wrapper">
+        <nav class="d-flex flex-row align-items-center p-2 border-bottom bg-white sticky-top">
     <div class="">
         <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#">
             <i class="fas fa-bars"></i>
@@ -168,12 +30,21 @@
     </div>
     <div class="flex-fill">
         <nav aria-label="breadcrumb" class="align-items-center">
-            <a href="./" class="text-no-hover"><b class="text-brand">Bootbox</b><span class="text-bb-alt text-thin mr-2">.js</span></a> &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework
+            <a href="./" class="text-no-decoration"><b class="text-brand">Bootbox</b><span class="text-bb-alt text-thin">.js</span></a> &mdash; alert, confirm, prompt, and flexible dialogs for the Bootstrap framework
         </nav>
     </div>
-    <div class="text-right text-nowrap">          
+    <div class="text-right text-nowrap mr-2">          
         <nav class="nav nav-navbar">
-            <div class="nav-item dropdown">
+            <a class="nav-item nav-link border-left border-right" href="./getting-started.html">
+                Getting Started
+            </a>
+            <a class="nav-item nav-link border-right" href="./examples.html">
+                Examples
+            </a>
+            <a class="nav-item nav-link border-right" href="./documentation.html">
+                Docs
+            </a>
+            <div class="nav-item dropdown border-right">
                 <a class="nav-link dropdown-toggle" href="#" id="revisions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     v5.4.0
                 </a>
@@ -186,7 +57,7 @@
                     
                 </div>
               </div>
-            <a class="nav-item nav-link text-dark mr-3" href="https://github.com/makeusabrew/bootbox">
+            <a class="nav-item nav-link text-dark border-right mr-3" href="https://github.com/makeusabrew/bootbox">
                 <i class="fab fa-github"></i>
                 GitHub
             </a>
@@ -199,7 +70,9 @@
         </nav>
     </div>
 </nav>
-                
+
+        <main class="page-content">            
+            <div class="container-fluid">                
                 <div class="d-flex flex-row py-3 align-items-stretch">
                     <article class="main-content px-4 mx-auto">
                         <div class="main-content-inner">
@@ -208,9 +81,8 @@
     Currently viewing documentation for version <b>5.4.0</b>. Other versions: <a href="./v4.x/documentation.html">4.x</a> &middot; <a href="./v3.x/documentation.html">3.x</a>
 </p>
 
-<hr class="section-divider" />
-
-<article class="topic">
+<div class="bg-white p-5">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="alert" class="topic-anchor">Alert</h2>
         <pre class="h5 py-3 px-4 mb-4 border bg-light"><code>bootbox.alert(<span class="text-primary">string|element</span> <b>message</b>, [<span class="text-info">function</span> <b>callback</b>]);</code></pre>
@@ -228,7 +100,7 @@
                     This is the simplest usage of Bootbox, requiring only the text of the message you wish to show.
                 </p>
                 <div class="bb-example bb-example-modal">
-                    <pre class="language-js line-numbers"><code>bootbox.alert("Your message here&hellip;")</code></pre>
+                    <pre class="language-js line-numbers"><code>bootbox.alert('Your message here&hellip;');</code></pre>
                     <figure>
                         <figcaption id="example-bb-1" class="topic-anchor">Example <b>bb.1</b></figcaption>
                         <div class="bb-modal-dialog">
@@ -248,13 +120,13 @@
                     If you have code that should not be evaluated until the user has dismissed the alert
                     (see <a href="#note-non-blocking">Bootbox Limitations</a> below), call it within the callback function:
                 </p>
-                <pre class="language-js line-numbers mb-4"><code>bootbox.alert("Your message here&hellip;", function(){
+                <pre class="language-js line-numbers mb-4"><code>bootbox.alert('Your message here&hellip;', function(){
     /* your callback code */ 
-})</code></pre>
-                <h4>Formatted text</h4>
+});</code></pre>
+                <h4 id="alert-formatted-text" class="topic-anchor">Formatted text</h4>
                 <p>Your message can also contain HTML. <sup><a href="#note-html"><i class="fas fa-exclamation-triangle text-danger"></i></a></sup></p>
                 <div class="bb-example bb-example-modal">
-                    <pre class="language-js line-numbers"><code>bootbox.alert("Your message &lt;b&gt;here&hellip;&lt;/b&gt;")</code></pre>
+                    <pre class="language-js line-numbers"><code>bootbox.alert('Your message &lt;b&gt;here&hellip;&lt;/b&gt;');</code></pre>
                     <figure>
                         <figcaption id="example-bb-2" class="topic-anchor">Example <b>bb.2</b></figcaption>
                         <div class="bb-modal-dialog">
@@ -309,7 +181,7 @@
     title: 'Your Title',
     message: 'Your message here&hellip;',
     callback: function(){ /* your callback code */ }
-})</code></pre>
+});</code></pre>
                     <figure>
                         <figcaption id="example-bb-3" class="topic-anchor">Example <b>bb.3</b></figcaption>
                         <div class="bb-modal-dialog bb-modal-sm">
@@ -338,7 +210,7 @@
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="confirm" class="topic-anchor">Confirm</h2>
         <pre class="h5 py-3 px-4 mb-2 bg-light border"><code>bootbox.confirm(<span class="text-primary">string|element</span> <b>message</b>, <span class="text-info">function</span> <b>callback</b>);</code></pre>
@@ -361,9 +233,9 @@
                     or <samp>false</samp>, depending on which button the user pressed.
                 </p>
                 <div class="bb-example bb-example-modal">
-                    <pre class="language-js line-numbers"><code>bootbox.confirm("Are you sure?", function(result){
+                    <pre class="language-js line-numbers"><code>bootbox.confirm('Are you sure?', function(result){
     /* your callback code */ 
-})</code></pre>
+});</code></pre>
                     <figure>
                         <figcaption id="example-bb-4" class="topic-anchor">Example <b>bb.4</b></figcaption>
                         <div class="bb-modal-dialog">
@@ -404,7 +276,7 @@
     size: 'small',
     message: 'Are you sure?',
     callback: function(result){ /* result is a boolean; true = OK, false = Cancel*/ }
-})</code></pre>
+});</code></pre>
                     <figure>
                         <figcaption id="example-bb-5" class="topic-anchor">Example <b>bb.5</b></figcaption>
                         <div class="bb-modal-dialog bb-modal-sm">
@@ -431,7 +303,7 @@
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="prompt" class="topic-anchor">Prompt</h2>
         <pre class="h5 py-3 px-4 mb-2 border bg-light"><code>bootbox.prompt(<span class="text-primary">string|element</span> <b>title</b>, <span class="text-info">function</span> <b>callback</b>);</code></pre>
@@ -454,9 +326,9 @@
                     or dismissed the dialog; otherwise it is passed the value of the text input.
                 </p>
                 <div class="bb-example bb-example-modal">
-                    <pre class="language-js line-numbers"><code>bootbox.prompt("What is your name?", function(result){
+                    <pre class="language-js line-numbers"><code>bootbox.prompt('What is your name?', function(result){
     /* your callback code */ 
-})</code></pre>
+});</code></pre>
                     <figure>
                         <figcaption id="example-bb-6" class="topic-anchor">Example <b>bb.6</b></figcaption>
                         <div class="bb-modal-dialog">
@@ -544,404 +416,438 @@
                 </div>
             </div>
         </div>
-    
-        <div class="topic-subsection">
-            <h3 id="prompt-options" class="topic-subsection-header topic-anchor">Prompt Dialog Options</h3>
-            <div class="topic-subsection-content">
-                <p>
-                    Prompt dialogs are (by default) single-line text inputs. You can modify the type of prompt Bootbox generates using the prompt-only
-                    options below.
-                </p>
-                <dl class="options-list">
-                    <dt id="prompt-option-value" class="topic-anchor topic-subsection-header h4">value</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code><code>Number</code><code>Array</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            You can set the initial value of the prompt using the <samp>value</samp> option.
-                        </p>
-                        <p>
-                            <i class="fas fa-info-circle text-info"></i>
-                            To pre-select more than one value (when using the checkbox or multiple select type), use an array
-                            for the <samp>value</samp> option. Note that the type of each item should match the type
-                            from <samp>inputOptions</samp>.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-type" class="topic-anchor topic-subsection-header h4">inputType</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>text</code>
-                        </p>
-                        <p>
-                            Changes the type of input generated for the prompt dialog.
-                        </p>
-                        <p>
-                            <i class="fas fa-info-circle text-info"></i>
-                            To pre-select more than one value (when using the checkbox or multiple select type), use an array
-                            for the <samp>value</samp> option. Note that the type of each item should match the type
-                            from <samp>inputOptions</samp>.
-                        </p>
-                        <p>
-                            Valid values, with their class selectors:
-                        </p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Class</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><code>text</code> (default)</td>
-                                    <td><code>bootbox-input-text</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>password</code></td>
-                                    <td><code>bootbox-input-password</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>textarea</code></td>
-                                    <td><code>bootbox-input-textarea</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>email</code></td>
-                                    <td><code>bootbox-input-email</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>select</code></td>
-                                    <td><code>bootbox-input-select</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>checkbox</code></td>
-                                    <td><code>bootbox-input-checkbox</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>radio</code></td>
-                                    <td><code>bootbox-input-radio</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>date</code></td>
-                                    <td><code>bootbox-input-date</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>time</code></td>
-                                    <td><code>bootbox-input-time</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>number</code></td>
-                                    <td><code>bootbox-input-number</code></td>
-                                </tr>
-                                <tr>
-                                    <td><code>range</code></td>
-                                    <td><code>bootbox-input-range</code></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p>
-                            Additionally, checkbox and radiobuttons are wrapped in a parent element, <samp>bootbox-checkbox-list</samp>
-                            and <samp>bootbox-radiobutton-list</samp>, respectively.
-                        </p>
-                        <p>
-                            <samp>email</samp>, <samp>date</samp>, <samp>time</samp>, <samp>number</samp>, and <samp>range</samp>
-                            all require browser support to function properly. You may want to consult <a href="https://caniuse.com">caniuse.com</a>
-                            to determine if your target browsers support the input types you are intending to use.
-                        </p>
-                        <h5 id="note-date-time-input">Date input type and browser support</h5>
-                        <p>
-                            At the time this is written, every major browser which supports the <samp>date</samp> input type will only
-                            accept date values in the ISO 8601 format, which (for a short date) is <samp>YYYY-MM-DD</samp>, where
-                        </p>
-                        <pre>
-YYYY = four-digit year
+    </div>
+</article>
+
+<hr class="section-divider" />
+
+    <article class="topic">
+    <div class="topic-content">
+        <h3 id="prompt-options" class="topic-subsection-header topic-anchor">Prompt Dialog Options</h3>
+        <div class="topic-subsection-content">
+            <p>
+                Prompt dialogs are (by default) single-line text inputs. You can modify the type of prompt Bootbox generates using the prompt-only
+                options below.
+            </p>
+            <dl class="options-list">
+                <dt id="prompt-option-value" class="topic-anchor topic-subsection-header h4">value</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code><code>Number</code><code>Array</code></span>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p>
+                        You can set the initial value of the prompt using the <samp>value</samp> option.
+                    </p>
+                    <p>
+                        <i class="fas fa-info-circle text-info"></i>
+                        To pre-select more than one value (when using the checkbox or multiple select type), use an array
+                        for the <samp>value</samp> option. Note that the type of each item should match the type
+                        from <samp>inputOptions</samp>.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-type" class="topic-anchor topic-subsection-header h4">inputType</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code></span>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Default:</span>
+                        <code>text</code>
+                    </p>
+                    <p>
+                        Changes the type of input generated for the prompt dialog.
+                    </p>
+                    <p>
+                        <i class="fas fa-info-circle text-info"></i>
+                        To pre-select more than one value (when using the checkbox or multiple select type), use an array
+                        for the <samp>value</samp> option. Note that the type of each item should match the type
+                        from <samp>inputOptions</samp>.
+                    </p>
+                    <p>
+                        Valid values, with their class selectors:
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Class</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>text</code> (default)</td>
+                                <td><code>bootbox-input-text</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>password</code></td>
+                                <td><code>bootbox-input-password</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>textarea</code></td>
+                                <td><code>bootbox-input-textarea</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>email</code></td>
+                                <td><code>bootbox-input-email</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>select</code></td>
+                                <td><code>bootbox-input-select</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>checkbox</code></td>
+                                <td><code>bootbox-input-checkbox</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>radio</code></td>
+                                <td><code>bootbox-input-radio</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>date</code></td>
+                                <td><code>bootbox-input-date</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>time</code></td>
+                                <td><code>bootbox-input-time</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>number</code></td>
+                                <td><code>bootbox-input-number</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>range</code></td>
+                                <td><code>bootbox-input-range</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        Additionally, checkbox and radiobuttons are wrapped in a parent element, <samp>bootbox-checkbox-list</samp>
+                        and <samp>bootbox-radiobutton-list</samp>, respectively.
+                    </p>
+                    <p>
+                        <samp>email</samp>, <samp>date</samp>, <samp>time</samp>, <samp>number</samp>, and <samp>range</samp>
+                        all require browser support to function properly. You may want to consult <a href="https://caniuse.com">caniuse.com</a>
+                        to determine if your target browsers support the input types you are intending to use.
+                    </p>
+                    <h5 id="note-date-time-input">Date input type and browser support</h5>
+                    <p>
+                        At the time this is written, every major browser which supports the <samp>date</samp> input type will only
+                        accept date values in the ISO 8601 format, which (for a short date) is <samp>YYYY-MM-DD</samp>, where
+                    </p>
+                    <pre>YYYY = four-digit year
 MM   = two-digit month (01 = January, etc.)
 DD   = two-digit day of month (01 through 31)
 </pre>
-                        <p>
-                            See <a href="https://en.wikipedia.org/wiki/ISO_8601">https://en.wikipedia.org/wiki/ISO_8601</a>
-                        </p>
-                        <h5 id="note-range-min-max">Range input and default value</h5>
-                        <p>
-                            Please note that, when using the <samp>range</samp> input type, the default <samp>min</samp> value
-                            is <samp>0</samp> and the default <samp>max</samp> value is <samp>100</samp> (see
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range#Specifying_the_minimum_and_maximum">MDN</a>).
-                            If you attempt to set the default value of the input to something less than your min value or greater than your max value, 
-                            the input will default to the respective value.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-options" class="topic-anchor topic-subsection-header h4">inputOptions</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>Array</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            If you specify <samp>select</samp>, <samp>checkbox</samp>, or <samp>radio</samp> as the
-                            input type, you must also supply an array of valid values in the format of:
-                        </p>
-                        <pre class="language-js line-numbers"><code>{
+                    <p>
+                        See <a href="https://en.wikipedia.org/wiki/ISO_8601">https://en.wikipedia.org/wiki/ISO_8601</a>
+                    </p>
+                    <h5 id="note-range-min-max">Range input and default value</h5>
+                    <p>
+                        Please note that, when using the <samp>range</samp> input type, the default <samp>min</samp> value
+                        is <samp>0</samp> and the default <samp>max</samp> value is <samp>100</samp> (see
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range#Specifying_the_minimum_and_maximum">MDN</a>).
+                        If you attempt to set the default value of the input to something less than your min value or greater than your max value, 
+                        the input will default to the respective value.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-options" class="topic-anchor topic-subsection-header h4">inputOptions</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>Array</code></span>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p>
+                        If you specify <samp>select</samp>, <samp>checkbox</samp>, or <samp>radio</samp> as the
+                        input type, you must also supply an array of valid values in the format of:
+                    </p>
+                    <pre class="language-js line-numbers"><code>{
     text: '',
     value: '',
     group: ''
 }</code></pre>
-                        <p>
-                            <samp>group</samp> is an optional property for populating the <samp>&lt;select&gt;</samp>;
-                            if specified, <samp>&lt;optgroup&gt;</samp> elements will be generated for each group
-                            value found in the <samp>inputOptions</samp> array.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-min-max" class="topic-anchor topic-subsection-header h4">min, max</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code><code>Number</code><code>Date String</code><code>Time string</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            The <samp>min</samp> or <samp>max</samp> value for the <samp>&lt;input&gt;</samp> element.
-                            Only valid for <samp>date</samp>,
-                            <samp>time</samp>, <samp>number</samp>, and <samp>range</samp> types.
-                        </p>
-                        <p>
-                            For <samp>range</samp> and <samp>number</samp>, min/max must be
-                            a numeric value.
-                        </p>
-                        <p>
-                            For <samp>time</samp>, min/max must a valid partial time value,
-                            in the form of <samp>HH:MM:SS</samp>, where
-                        </p>
-                        <pre>
-HH = any zero-padded value between <samp>00</samp> and <samp>23</samp>
+                    <p>
+                        <samp>group</samp> is an optional property for populating the <samp>&lt;select&gt;</samp>;
+                        if specified, <samp>&lt;optgroup&gt;</samp> elements will be generated for each group
+                        value found in the <samp>inputOptions</samp> array.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-min-max" class="topic-anchor topic-subsection-header h4">min, max</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code><code>Number</code><code>Date String</code><code>Time string</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <span>
+                            <code>date</code>,
+                            <code>time</code>, 
+                            <code>number</code>, 
+                            <code>range</code>
+                        </span>
+                    </p>
+                    <p>
+                        The <samp>min</samp> or <samp>max</samp> value for the <samp>&lt;input&gt;</samp> element.
+                    </p>
+                    <p>
+                        For <samp>range</samp> and <samp>number</samp>, min/max must be
+                        a numeric value.
+                    </p>
+                    <p>
+                        For <samp>time</samp>, min/max must a valid partial time value,
+                        in the form of <samp>HH:MM:SS</samp>, where
+                    </p>
+                    <pre>HH = any zero-padded value between <samp>00</samp> and <samp>23</samp>
 MM = any zero-padded value between <samp>00</samp> and <samp>59</samp>
 SS = any zero-padded value between <samp>00</samp> and <samp>59</samp>
 </pre>
-                        <p>
-                            For <samp>date</samp>, min/max must a date value in the form
-                            of <samp>YYYY-MM-DD</samp>, where
-                        </p>
-                        <pre>
-YYYY = four-digit year
+                    <p>
+                        For <samp>date</samp>, min/max must a date value in the form
+                        of <samp>YYYY-MM-DD</samp>, where
+                    </p>
+                    <pre>YYYY = four-digit year
 MM   = two-digit month (01 = January, etc.)
 DD   = two-digit day of month (01 through 31)
 </pre>
-                        <p>
-                            See the MDN article for
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-min">min</a> or
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-max">max</a> for more information.
-                        </p>
-                        <h5 id="note-number-min-max">Number input and min/max values</h5>
-                        <p>
-                            When using the <samp>number</samp> input type, note that a value may be manually entered which is less than your min or greater than 
-                            your max (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#Specifying_minimum_and_maximum_values">MDN</a>). 
-                            The input will, however, report that it is invalid, which can be used in conjunction with the <a href="prompt-option-required">required</a> 
-                            option to prevent the value from being accepted.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-step" class="topic-anchor topic-subsection-header h4">step</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code><code>Number</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            The <samp>step</samp> value for the <samp>&lt;input&gt;</samp> element. Only valid for
-                            <samp>time</samp>,
-                            <samp>number</samp>, and <samp>range</samp> types.
-                        </p>
-                        <p>
-                            Can be the string value <samp>any</samp> (the browser default), or a positive, non-zero
-                            numeric value. See
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-step">the MDN article for <samp>&lt;input&gt;</samp></a>
-                            for more information.
-                        </p>
-                        <p>
-                            The default <samp>step</samp> value for <samp>number</samp> inputs is <samp>1</samp> 
-                            (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#attr-step">MDN</a>).
-                        </p>
-                        <p>
-                            <b>Warning:</b> For most browsers, date inputs are buggy in their implementation of <samp>step</samp>,
-                            so this attribute would likely have no effect. Therefore, we don't set the step attribute
-                            for date inputs.
-                        </p>
-                        <p>
-                            See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date#Setting_maximum_and_minimum_dates">the MDN article</a>
-                            for more information.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-maxlength" class="topic-anchor topic-subsection-header h4">maxlength</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>Number</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>maxlength</samp> option to limit the number of characters entered into a
-                            text-based input. Must be a positive, non-zero numeric value.
-                        </p>
-                        <p>
-                            Valid for <samp>text</samp>, <samp>textarea</samp>, <samp>email</samp>, and <samp>password</samp>
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-pattern" class="topic-anchor topic-subsection-header h4">pattern</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>pattern</samp> option to require the input value to follow a specific format.
-                            If <samp>pattern</samp> is set and a value has been entered by your user, the prompt will not
-                            close if the input value fails pattern validation.
-                        </p>
-                        <p>
-                            Can be added for any input type, but generally only used for text inputs,
-                            normally as a fallback for <samp>email</samp>, <samp>time</samp>, <samp>date</samp>, <samp>number</samp>
-                            or <samp>range</samp> inputs where native browser support for those types is lacking.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-placeholder" class="topic-anchor topic-subsection-header h4">placeholder</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>String</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>placeholder</samp> option to provide a small amount of "helper" text
-                            within a text-based input.
-                        </p>
-                        <p>
-                            There is no real limit on the amount of text you may use for your placeholder, but
-                            keep in mind that the placeholder disappears when the input has focus (depending on
-                            the browser) or has a value. Use the <samp>message</samp> option to provide help text
-                            which you want to always be visible or that is important.
-                        </p>
-                        <p>
-                            Valid for <samp>text</samp>, <samp>textarea</samp>, <samp>email</samp>, and <samp>password</samp>.
-                        </p>
-                        <p>
-                            If specified for <samp>time</samp>, <samp>date</samp>, <samp>number</samp>, or <samp>range</samp> inputs,
-                            your users will normally only see the placeholder where native browser support for those types is lacking.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-required" class="topic-anchor topic-subsection-header h4">required</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>Boolean</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>required</samp> option to <samp>true</samp> to require an input value.
-                            When <samp>true</samp>, the prompt will not close if the input value is <samp>null</samp>,
-                            an empty string, or fails the input type's built-in validation constraints.
-                        </p>
-                        <p>
-                            <i class="fas fa-info-circle text-info"></i>
-                            If used with the <samp>checkbox</samp> inputType, each checkbox must be checked for the prompt to be valid.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-multiple" class="topic-anchor topic-subsection-header h4">multiple</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>Boolean</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>multiple</samp> option to <samp>true</samp> to allow users to
-                            select more than one option when using the <samp>select</samp> input type.
-                        </p>
-                        <p>
-                            <i class="fas fa-info-circle text-info"></i>
-                            To pre-select more than one value, use an array for the <samp>value</samp> option. Note that the type
-                            of each item should match the type from <samp>inputOptions</samp>.
-                        </p>
-                        <p>
-                            Valid only for the <samp>select</samp> type.
-                        </p>
-                    </dd>
-    
-                    <dt id="prompt-option-input-rows" class="topic-anchor topic-subsection-header h4">rows</dt>
-                    <dd class="topic-subsection-content">
-                        <p class="mb-1">
-                            <span class="meta-info">Type:</span>
-                            <span class="meta-types"><code>Number</code></span>
-                        </p>
-                        <p class="mb-3">
-                            <span class="meta-info">Default:</span>
-                            <code>null</code>
-                        </p>
-                        <p>
-                            Set the <samp>rows</samp> option to a non-zero number to set the <samp>rows</samp> attribute
-                            when using the <samp>textarea</samp> input type. If omitted, the <samp>rows</samp> attribute is
-                            not set and the textarea will render with the browser's default number of rows.
-                        </p>
-                        <p>
-                            Valid only for the <samp>textarea</samp> type.
-                        </p>
-                    </dd>
-                </dl>
-                <p>
-                    Please see the <a href="./examples.html#prompt">Examples page</a> for more examples of prompt
-                    dialogs.
-                </p>
-            </div>
+                    <p>
+                        See the MDN article for
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-min">min</a> or
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-max">max</a> for more information.
+                    </p>
+                    <h5 id="note-number-min-max">Number input and min/max values</h5>
+                    <p>
+                        When using the <samp>number</samp> input type, note that a value may be manually entered which is less than your min or greater than 
+                        your max (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#Specifying_minimum_and_maximum_values">MDN</a>). 
+                        The input will, however, report that it is invalid, which can be used in conjunction with the <a href="prompt-option-required">required</a> 
+                        option to prevent the value from being accepted.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-step" class="topic-anchor topic-subsection-header h4">step</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code><code>Number</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <span>
+                            <code>time</code>, 
+                            <code>number</code>, 
+                            <code>range</code>
+                        </span>
+                    </p>
+                    <p>
+                        The <samp>step</samp> value for the <samp>&lt;input&gt;</samp> element.
+                    </p>
+                    <p>
+                        Can be the string value <samp>any</samp> (the browser default), or a positive, non-zero
+                        numeric value. See
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-step">the MDN article for <samp>&lt;input&gt;</samp></a>
+                        for more information.
+                    </p>
+                    <p>
+                        The default <samp>step</samp> value for <samp>number</samp> inputs is <samp>1</samp> 
+                        (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#attr-step">MDN</a>).
+                    </p>
+                    <p>
+                        <b>Warning:</b> For most browsers, date inputs are buggy in their implementation of <samp>step</samp>,
+                        so this attribute would likely have no effect. Therefore, we don't set the step attribute
+                        for date inputs.
+                    </p>
+                    <p>
+                        See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date#Setting_maximum_and_minimum_dates">the MDN article</a>
+                        for more information.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-maxlength" class="topic-anchor topic-subsection-header h4">maxlength</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>Number</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <span>
+                            <code>text</code>,
+                            <code>textarea</code>, 
+                            <code>email</code>, 
+                            <code>password</code>
+                        </span>
+                    </p>
+                    <p>
+                        Set the <samp>maxlength</samp> option to limit the number of characters entered into a
+                        text-based input. Must be a positive, non-zero numeric value.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-pattern" class="topic-anchor topic-subsection-header h4">pattern</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <span>
+                            All, except
+                            <code>select</code>, 
+                            <code>radio</code>,
+                            <code>checkbox</code>
+                        </span>
+                    </p>
+                    <p>
+                        Set the <samp>pattern</samp> option to require the input value to follow a specific format.
+                        If <samp>pattern</samp> is set and a value has been entered by your user, the prompt will not
+                        close if the input value fails pattern validation.
+                    </p>
+                    <p>
+                        Can be added as a fallback for <samp>email</samp>, <samp>time</samp>, <samp>date</samp>, <samp>number</samp>
+                        or <samp>range</samp> inputs where native browser support for those types is lacking.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-placeholder" class="topic-anchor topic-subsection-header h4">placeholder</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>String</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <span>
+                            All <sup class="text-muted">*</i>
+                        </span>
+                    </p>
+                    <p>
+                        Set the <samp>placeholder</samp> option to provide a small amount of "helper" text
+                        within a text-based input.
+                    </p>
+                    <p>
+                        There is no real limit on the amount of text you may use for your placeholder, but
+                        keep in mind that the placeholder disappears when the input has focus (depending on
+                        the browser) or has a value. Use the <samp>message</samp> option to provide help text
+                        which you want to always be visible or that is important.
+                    </p>
+                    <p>
+                        <b>*</b> If specified for <samp>time</samp>, <samp>date</samp>, <samp>number</samp>, or <samp>range</samp> inputs,
+                        your users will normally only see the placeholder where native browser support for those types is lacking. We also 
+                        will set the placeholder attribute on a <samp>select</samp>, although that's not a valid/supported attribute.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-required" class="topic-anchor topic-subsection-header h4">required</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>Boolean</code></span>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p>
+                        Set the <samp>required</samp> option to <samp>true</samp> to require an input value.
+                        When <samp>true</samp>, the prompt will not close if the input value is <samp>null</samp>,
+                        an empty string, or fails the input type's built-in validation constraints.
+                    </p>
+                    <p>
+                        <i class="fas fa-info-circle text-info"></i>
+                        If used with the <samp>checkbox</samp> inputType, each checkbox must be checked for the prompt to be valid.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-multiple" class="topic-anchor topic-subsection-header h4">multiple</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>Boolean</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <code>select</code>
+                    </p>
+                    <p>
+                        Set the <samp>multiple</samp> option to <samp>true</samp> to allow users to
+                        select more than one option when using the <samp>select</samp> input type.
+                    </p>
+                    <p>
+                        <i class="fas fa-info-circle text-info"></i>
+                        To pre-select more than one value, use an array for the <samp>value</samp> option. Note that the type
+                        of each item should match the type from <samp>inputOptions</samp>.
+                    </p>
+                </dd>
+
+                <dt id="prompt-option-input-rows" class="topic-anchor topic-subsection-header h4">rows</dt>
+                <dd class="topic-subsection-content">
+                    <p class="mb-1">
+                        <span class="meta-info">Type:</span>
+                        <span class="meta-types"><code>Number</code></span>
+                    </p>
+                    <p class="mb-1">
+                        <span class="meta-info">Default:</span>
+                        <code>null</code>
+                    </p>
+                    <p class="mb-3">
+                        <span class="meta-info">Types:</span>
+                        <code>textarea</code>
+                    </p>
+                    <p>
+                        Set the <samp>rows</samp> option to a non-zero number to set the <samp>rows</samp> attribute
+                        when using the <samp>textarea</samp> input type. If omitted, the <samp>rows</samp> attribute is
+                        not set and the textarea will render with the browser's default number of rows.
+                    </p>
+                </dd>
+            </dl>
+            <p>
+                Please see the <a href="./examples.html#prompt">Examples page</a> for more examples of prompt
+                dialogs.
+            </p>
         </div>
     </div>
 </article>
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="dialog" class="topic-anchor">Custom Dialog</h2>
         <pre class="h5 py-3 px-4 mb-2 bg-light border"><code>bootbox.dialog(<span class="text-primary">object</span> <b>options</b>);</code></pre>
@@ -965,7 +871,10 @@ DD   = two-digit day of month (01 through 31)
             <h3 id="dialog-basic-usage" class="topic-subsection-header topic-anchor">Basic Usage</h3>
             <div class="topic-subsection-content">
                 <p>
-                    The minimum required to create a custom dialog is the <samp>message</samp> option, which will create
+                    The minimum required to create a custom dialog is the <samp>message</samp> option.
+                </p>
+                <p>
+                    Here's an example using <samp>message</samp> and <samp>closeButton: false</samp>, which will create
                     a non-dismissable dialog (useful as a "loading" overlay).
                 </p>
                 <div class="bb-example bb-example-modal">
@@ -1070,13 +979,14 @@ DD   = two-digit day of month (01 through 31)
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="dialog-options" class="topic-anchor">Dialog Options</h2>
     </header>
     <div class="topic-content">
         <p>
-            Bootbox dialogs can be configured using the options below.
+            The options shown below apply to all Bootbox dialogs. Options which are specific to prompt 
+            dialogs can be found <a href="#prompt-options">above</a>.
         </p>
         <dl class="options-list">
             <dt id="option-message" class="topic-subsection-header topic-anchor h4">message</dt>
@@ -1089,7 +999,7 @@ DD   = two-digit day of month (01 through 31)
                     <span class="meta-info">Default:</span> <code>null</code>
                 </p>
                 <p class="mb-2">
-                    <span class="badge badge-danger p-3">
+                    <span class="badge badge-danger p-2">
                         Required for alert, confirm, and custom dialogs
                     </span>
                 </p>
@@ -1109,7 +1019,7 @@ DD   = two-digit day of month (01 through 31)
                     <span class="meta-info">Default:</span> <code>null</code>
                 </p>
                 <p class="mb-2">
-                    <span class="badge badge-danger p-3">Required for prompt</span>
+                    <span class="badge badge-danger p-2">Required for prompt</span>
                 </p>
                 <p>
                     Adds a header to the dialog and places this text
@@ -1128,10 +1038,10 @@ DD   = two-digit day of month (01 through 31)
                     <span class="meta-info">Default:</span> <code>null</code>
                 </p>
                 <p class="mb-2">
-                    <span class="badge badge-danger p-3">
+                    <span class="badge badge-danger p-2">
                         Required for confirm and prompt
                     </span>
-                    <span class="badge badge-info p-3">
+                    <span class="badge badge-info p-2">
                         Not called for custom dialogs
                     </span>
                 </p>
@@ -1149,13 +1059,13 @@ DD   = two-digit day of month (01 through 31)
                     <samp>true</samp> or <samp>false</samp> value, while the prompt result will hold the
                     value(s) entered by the user:
                 </p>
-                <pre class="language-js line-numbers"><code>bootbox.confirm("Are you sure?", function(result) {
+                <pre class="language-js line-numbers"><code>bootbox.confirm('Are you sure?', function(result) {
     // result will be true or false
 });</code></pre>
                 <p>
                     or
                 </p>
-                <pre class="language-js line-numbers"><code>bootbox.prompt("What is your name?", function(result) {
+                <pre class="language-js line-numbers"><code>bootbox.prompt('What is your name?', function(result) {
     if (result === null) {
         // Prompt dismissed
     } else {
@@ -1167,7 +1077,7 @@ DD   = two-digit day of month (01 through 31)
                     as the last line of the callback. You will then need to manually dismiss the dialog using
                     the <samp>modal()</samp> function or <samp>bootbox.hideAll()</samp>:
                 </p>
-                <pre class="language-js line-numbers"><code>let dialog = bootbox.prompt("What is your name?", function(result) {
+                <pre class="language-js line-numbers"><code>let dialog = bootbox.prompt('What is your name?', function(result) {
     if (result === null) {
         // Prompt dismissed
     } else {
@@ -1463,7 +1373,7 @@ DD   = two-digit day of month (01 through 31)
                 <p>
                     Buttons are defined as JavaScript objects. The minimum shortform requirement to define a button is:
                 </p>
-                <pre class="language-js line-numbers"><code>"Your button text": function() { }</code></pre>
+                <pre class="language-js line-numbers"><code>'Your button text': function() { }</code></pre>
                 <p>
                     The complete definition of a button object is:
                 </p>
@@ -1506,7 +1416,7 @@ DD   = two-digit day of month (01 through 31)
                     and CSS styles. For example:
                 </p>
                 <pre class="language-js line-numbers"><code>bootbox.confirm({
-    message: "This is a confirm with custom button text and color! Do you like it?",
+    message: 'This is a confirm with custom button text and color! Do you like it?',
     buttons: {
         confirm: {
             label: 'Yes',
@@ -1582,7 +1492,7 @@ DD   = two-digit day of month (01 through 31)
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="locales" class="topic-anchor">
             Available Locales
@@ -1772,7 +1682,7 @@ DD   = two-digit day of month (01 through 31)
 
 <hr class="section-divider" />
 
-<section class="topic">
+    <section class="topic">
     <header class="topic-header">
         <h2 id="jquery-functions" class="topic-anchor">Using jQuery Functions with Bootbox</h2>
     </header>
@@ -1812,7 +1722,7 @@ dialog.modal('hide');</code></pre>
 
 <hr class="section-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="instance-functions" class="topic-anchor">Instance Functions</h2>
     </header>
@@ -1842,7 +1752,7 @@ dialog.init(function(){
 
 <hr class="topic-divider" />
 
-<article class="topic">
+    <article class="topic">
     <header class="topic-header">
         <h2 id="global-functions" class="topic-anchor">Global Functions</h2>
         <p>
@@ -1866,7 +1776,7 @@ dialog.init(function(){
     * which locale settings to use to translate the three
     * standard button labels: OK, CONFIRM, CANCEL
     */
-    locale: "fr",
+    locale: 'fr',
     
     /**
     * @optional Boolean
@@ -1901,7 +1811,7 @@ dialog.init(function(){
     * @default: null
     * an additional class to apply to the dialog wrapper
     */
-    className: "my-modal"
+    className: 'my-modal'
     
 });</code></pre>
             </div>
@@ -1962,7 +1872,7 @@ dialog.init(function(){
                 <p>
                     Hide all currently active Bootbox dialogs. Individual dialogs can be closed as per normal Bootstrap dialogs:
                 </p>
-                <pre class="language-js line-numbers"><code>dialog.modal('hide')</code></pre>
+                <pre class="language-js line-numbers"><code>dialog.modal('hide');</code></pre>
             </div>
         </div>
     </div>
@@ -1970,7 +1880,7 @@ dialog.init(function(){
 
 <hr class="topic-divider" />
 
-<article id="notes" class="topic">
+    <article id="notes" class="topic">
     <header class="topic-header">
         <h2 id="known-limitations" class="topic-anchor">Known Limitations</h2>
     </header>
@@ -1981,6 +1891,7 @@ dialog.init(function(){
         <div class="topic-notes-list">
             <div class="topic-subsection">
                 <h3 class="text-danger topic-subsection-header topic-anchor" id="note-non-blocking">
+                    <i class="fas fa-code text-muted"></i>
                     Dialog code does not block code execution
                 </h3>
                 <div class="topic-subsection-content">
@@ -1999,6 +1910,7 @@ dialog.init(function(){
     
             <div class="topic-subsection">
                 <h3 class="text-danger topic-subsection-header topic-anchor" id="note-multiple-modals">
+                    <i class="fas fa-ban text-muted"></i>
                     Multiple open modals are not supported
                 </h3>
                 <div class="topic-subsection-content">
@@ -2013,6 +1925,7 @@ dialog.init(function(){
             
             <div class="topic-subsection">
                 <h3 class="text-danger topic-subsection-header topic-anchor" id="note-input-values">
+                    <i class="fas fa-skull-crossbones text-muted"></i>
                     Prompt values are not sanitized
                 </h3>
                 <div class="topic-subsection-content">
@@ -2024,6 +1937,7 @@ dialog.init(function(){
             
             <div class="topic-subsection">
                 <h3 class="text-danger topic-subsection-header topic-anchor" id="note-html">
+                    <i class="fas fa-skull-crossbones text-muted"></i>
                     Content strings are not sanitized
                 </h3>
                 <div class="topic-subsection-content">
@@ -2043,48 +1957,16 @@ dialog.init(function(){
         </div>
     </div>
 </article>  
+</div>
                         </div>
                     </article>
-
-                    <aside class="rightbar align-self-stretch border-left">
-    <div class="rightbar-content py-4">
-        <h4 class="mb-4">
-            <span class="fas fa-question-circle text-primary"></span>
-            Looking for help?
-        </h4>
-        <dl>
-            <dt>Bugs</dt>
-            <dd>
-                <p>
-                    If you think you've found a bug in Bootbox, please <a href="https://github.com/makeusabrew/bootbox/issues">open an issue on Github</a>.
-                    Please take a moment to search existing issues before opening a new issue.
-                </p>
-            </dd>
-
-            <dt>Troubleshooting</dt>
-            <dd>
-                <p>
-                    Need help getting your code to work?
-                    <a href="https://stackoverflow.com/questions/tagged/bootbox" class="text-nowrap text-dark">
-                        <span class="fab fa-stack-overflow text-stack-overflow"></span>
-                        stack<b>overflow</b>
-                    </a> is your best option.
-                </p>
-                <p>
-                    If possible, include a fiddle or Stack Snippet that demonstrates the issue you're
-                    experiencing.
-                </p>
-            </dd>
-        </dl>
-    </div>
-</aside>
                 </div>
             </div>
         </main>
 
         <footer class="page-content">
-            <div class="container-fluid">
-                <div class="border-top py-3 px-4">
+            <div class="text-center container-fluid">
+                <div class="p-4">
                     Bootbox.js &copy; 2011 - 2020 <a href="http://paynedigital.com/about" class="text-bb-brand">Nick Payne</a>. 
                     Syntax highlighting by <a href="https://prismjs.com/" class="text-bb-brand">Prism.js</a> 
                     using <a href="https://andrewlock.net" class="text-bb-brand">Andrew Lock</a>'s Visual Studio theme.
@@ -2092,6 +1974,146 @@ dialog.init(function(){
             </div>
         </footer>
     </div>
+    <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+        <!-- sidebar-search  -->
+        <div class="sidebar-search">
+            <form id="search-form">
+                <div class="input-group">
+                    <input type="text" class="form-control search-menu" placeholder="Search..." id="lunrsearch" name="q" maxlength="255" />
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="submit" id="search-go">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="mb-0 powered-by"><small>Powered by <a href="https://lunrjs.com/" class="text-warning" target="_blank">lunr.js</a></small></p>
+            </form>
+            <div id="lunrsearchresults"></div>
+        </div>   
+        <!-- sidebar-menu  -->
+        <div class="sidebar-item sidebar-menu">
+            <ul>
+                <li class="nav-item ">
+                    <a href="./">
+                        <i class="fas fa-home"></i>
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item sidebar-dropdown ">
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                        <span class="menu-text">Getting Started</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./getting-started.html">Introduction</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#download">Download / Install</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#dependencies">Dependencies</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./getting-started.html#usage-instructions">Usage
+                                    Instructions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item sidebar-dropdown ">
+                    <a href="#">
+                        <i class="far fa-file-code"></i>
+                        <span class="menu-text">Examples</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./examples.html">Overview</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#alert">Alert</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#confirm">Confirm</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#prompt">Prompt</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./examples.html#dialog">Dialog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item sidebar-dropdown active open">
+                    <a href="#">
+                        <i class="far fa-file-alt"></i>
+                        <span class="menu-text">Documentation</span>
+                    </a>
+                    <div class="sidebar-submenu">
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html">Overview</a>
+                            </li>
+                        </ul>
+                        <h5 class="header-menu">
+                            <span>Dialogs</span>
+                        </h5>
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html#alert">Alert</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#confirm">Confirm</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#prompt">Prompt</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#dialog">Dialog</a>
+                            </li>
+                        </ul>
+                        <h5 class="header-menu">
+                            <span>Configuration</span>
+                        </h5>
+                        <ul class="nav-items">
+                            <li>
+                                <a class="nav-link" href="./documentation.html#dialog-options">Options</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#locales">Locales</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#jquery-functions">Chaining jQuery
+                                    Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#instance-functions">Instance
+                                    Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#global-functions">Global Functions</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./documentation.html#notes">Notes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a href="./faq.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="menu-text">FAQ / Issues</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar-menu  -->
+    </div>
+</nav>
     <div class="bb-scroll-widget">
         <a href="#" class="back-to-top">
             <span class="fa-stack">
