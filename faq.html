@@ -44,6 +44,9 @@
             <a class="nav-item nav-link border-right" href="./documentation.html">
                 Docs
             </a>
+            <a class="nav-item nav-link border-right" href="./faq.html">
+                FAQs
+            </a>
             <div class="nav-item dropdown border-right">
                 <a class="nav-link dropdown-toggle" href="#" id="revisions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     v5.4.0
@@ -80,7 +83,7 @@
 <p class="lead">
     Bootbox.js is designed to be relatively easy to use, but there are some known issues and frequently asked questions, as noted here.
 </p>
-<div class="bg-white p-5">
+<div class="bg-white rounded p-5">
     <article class="topic">
     <header class="topic-header">   
         <h4 id="non-blocking" class="topic-anchor font-weight-bold mb-4">
@@ -97,7 +100,7 @@
         </p>
         <p>
             Additionally, the <samp>modal()</samp> function is an asynchronous function, since JavaScript didn't really provide <q class="font-italic">wait until this thing is done</q>
-            functionality in versions prior to ES7 (with async/await). Since Bootstrap 4 is still offerring <em>some</em> support for Internet Explorer 
+            functionality in versions prior to ES7 (with async/await). Since Bootstrap 4 is still offering <em>some</em> support for Internet Explorer 
             (which only supports ES6 and lower), <samp>modal()</samp> doesn't use async/await (nor does Bootbox).
         </p>
         <p>
@@ -319,7 +322,7 @@ function handleConfirm(result){
             <pre class="language-js line-numbers"><code>bootbox.alert({ 
     title: 'My title',
     message: "Your message here&hellip;" 
-})</code></pre>
+});</code></pre>
             <figure>
                 <figcaption id="example-bb-4" class="topic-anchor">Example <b>bb.4</b></figcaption>
                 <div class="modal-dialog" role="document">
@@ -550,10 +553,10 @@ function handleConfirm(result){
     <script src="./assets/js/prism.js"></script>
     <script src="./assets/js/main.js"></script>
       
-    <script src="/assets/js/lunr.js"></script>
-<script src="/assets/js/jquery.mark.js"></script>
+    <script src="./assets/js/lunr.js"></script>
+<script src="./assets/js/jquery.mark.js"></script>
 
-<script src="/assets/js/search.js"></script>
+<script src="./assets/js/search.js"></script>
 </body>
 
 </html>

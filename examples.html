@@ -46,6 +46,9 @@
             <a class="nav-item nav-link border-right" href="./documentation.html">
                 Docs
             </a>
+            <a class="nav-item nav-link border-right" href="./faq.html">
+                FAQs
+            </a>
             <div class="nav-item dropdown border-right">
                 <a class="nav-link dropdown-toggle" href="#" id="revisions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     v5.4.0
@@ -86,7 +89,7 @@
     Have an example you'd like to add? <a href="https://github.com/makeusabrew/bootbox/issues">Open a new issue</a>, or 
     add a <a href="https://github.com/makeusabrew/bootbox/pulls">pull-request</a> with your example added to this page.
 </p>
-<div class="bg-white p-5">
+<div class="bg-white rounded p-5">
     <article class="topic">
     <header class="topic-header">
         <h2 id="alert" class="topic-anchor">
@@ -142,7 +145,7 @@ bootbox.alert(template, function () {
     callback: function () {
         console.log('This was logged in the callback!');
     }
-})</code></pre>
+});</code></pre>
                     </dd>
                     <dt id="alert-small-size" class="bb-anchor h5">Small dialog</dt>
                     <dd class="bb-example">
@@ -250,7 +253,7 @@ bootbox.alert(template, function () {
         <h2 id="confirm" class="topic-anchor">
             Confirm
         </h2>
-        <p class="mb-3 py-2 bb-section-toggle d-flex flex-row">
+        <p class="mb-3 py-2 content-toggle d-flex flex-row">
             <span>
                 <a href="./documentation.html#confirm">Documentation</a>
             </span>
@@ -795,7 +798,7 @@ dialog.init(function(){
             className: 'btn-warning',
             callback: function(){
                 console.log('Custom button clicked');
-            return false;
+                return false;
             }
         },
         ok: {
@@ -814,10 +817,10 @@ dialog.init(function(){
     </div>
 </article>
 </div>
+<div id="bb-growl" class="bb-alert alert alert-info" style="display:none;">
+    <span>The examples populate this alert with dummy content</span>
+</div>
 <div class="d-none">
-    <div id="bb-growl" class="bb-alert alert alert-info" style="display:none;">
-        <span>The examples populate this alert with dummy content</span>
-    </div>
     <div id="alert-message-template">Your message <b>here…</b></div>
 </div>
                         </div>
@@ -996,10 +999,10 @@ dialog.init(function(){
     <script src="./assets/js/example.js"></script>
     <script src="./assets/js/demos.js"></script>
       
-    <script src="/assets/js/lunr.js"></script>
-<script src="/assets/js/jquery.mark.js"></script>
+    <script src="./assets/js/lunr.js"></script>
+<script src="./assets/js/jquery.mark.js"></script>
 
-<script src="/assets/js/search.js"></script>
+<script src="./assets/js/search.js"></script>
 </body>
 
 </html>

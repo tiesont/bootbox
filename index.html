@@ -44,6 +44,9 @@
             <a class="nav-item nav-link border-right" href="./documentation.html">
                 Docs
             </a>
+            <a class="nav-item nav-link border-right" href="./faq.html">
+                FAQs
+            </a>
             <div class="nav-item dropdown border-right">
                 <a class="nav-link dropdown-toggle" href="#" id="revisions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     v5.4.0
@@ -102,7 +105,7 @@
     </div>
 </header>
 
-<div class="bg-white p-5">
+<div class="bg-white rounded p-5">
     <section class="page-section">
         <h3 class="page-section-header mb-3">Flexible Bootstrap-style dialogs</h3>
         <div class="mb-4">
@@ -135,7 +138,7 @@
 &lt;!-- sometime later, probably inside your on load event callback --&gt;
 &lt;script&gt;
     $("#myModal").on("show.bs.modal", function() {      // wire up the OK button to dismiss the modal when shown
-        $("#myModal a.btn").on("click", function(e) {
+        $("#myModal .modal-footer .btn").on("click", function(e) {
             console.log("button pressed");              // just as an example...
             $("#myModal").modal('hide');                // dismiss the dialog
         });
@@ -348,10 +351,10 @@
     <script src="./assets/js/prism.js"></script>
     <script src="./assets/js/main.js"></script>
       
-    <script src="/assets/js/lunr.js"></script>
-<script src="/assets/js/jquery.mark.js"></script>
+    <script src="./assets/js/lunr.js"></script>
+<script src="./assets/js/jquery.mark.js"></script>
 
-<script src="/assets/js/search.js"></script>
+<script src="./assets/js/search.js"></script>
 </body>
 
 </html>
