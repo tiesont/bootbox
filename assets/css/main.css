@@ -3453,7 +3453,7 @@ pre[class*="language-"] { margin-bottom: 1rem; }
 
 .bs-callout { border-color: #eee; border-image: none; border-radius: 0; border-style: solid; border-width: 0 0 0 5px; margin: 1rem 0; padding: 1rem; }
 
-.bs-callout h4, .bs-callout .callout-heading { margin-bottom: 5px; margin-top: 0; }
+.bs-callout h4, .bs-callout .callout-heading { font-weight: 700; margin-bottom: 1rem; margin-top: 0; }
 
 .bs-callout p:last-child { margin-bottom: 0; }
 
@@ -3463,15 +3463,15 @@ pre[class*="language-"] { margin-bottom: 1rem; }
 
 .bs-callout.bs-callout-danger { border-left-color: #ce4844; }
 
-.bs-callout.bs-callout-danger .callout-heading { color: #ce4844; }
+.bs-callout.bs-callout-danger .far, .bs-callout.bs-callout-danger .fas, .bs-callout.bs-callout-danger .fab, .bs-callout.bs-callout-danger .fad, .bs-callout.bs-callout-danger .fal { color: #ce4844; }
 
 .bs-callout.bs-callout-warning { border-left-color: #aa6708; }
 
-.bs-callout.bs-callout-warning .callout-heading { color: #aa6708; }
+.bs-callout.bs-callout-warning .far, .bs-callout.bs-callout-warning .fas, .bs-callout.bs-callout-warning .fab, .bs-callout.bs-callout-warning .fad, .bs-callout.bs-callout-warning .fal { color: #aa6708; }
 
 .bs-callout.bs-callout-info { border-left-color: #1b809e; }
 
-.bs-callout.bs-callout-info .callout-heading { color: #1b809e; }
+.bs-callout.bs-callout-info .far, .bs-callout.bs-callout-info .fas, .bs-callout.bs-callout-info .fab, .bs-callout.bs-callout-info .fad, .bs-callout.bs-callout-info .fal { color: #1b809e; }
 
 .bb-example figure { background-color: #F7F7F9; border-radius: 4px; border-color: #e5e5e5 #eee #eee; border-style: solid; border-width: 1px 0; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05) inset; margin: 0 0 15px; padding: 45px 0 15px; position: relative; }
 

@@ -223,7 +223,7 @@
             A confirm dialog with a cancel and a confirm button. Pressing the <kbd>ESC</kbd> key or clicking close (<i class="fas fa-times"></i>) dismisses
             the dialog and invokes the callback as if the user had clicked the Cancel button.
         </p>
-        <p class="text-danger mb-4">
+        <p class="bs-callout bs-callout-danger mb-4">
             <i class="fas fa-exclamation-triangle"></i> Confirm dialogs require a callback function.
         </p>
     
@@ -316,7 +316,7 @@
             A dialog which prompts for user input. Pressing the <kbd>ESC</kbd> key or clicking close (<i class="fas fa-times"></i>) dismisses the dialog
             and invokes the callback as if the user had clicked the Cancel button.
         </p>
-        <p class="text-danger mb-4">
+        <p class="bs-callout bs-callout-danger mb-4">
             <i class="fas fa-exclamation-triangle"></i> Prompt dialogs require a callback function.
         </p>
     
@@ -674,15 +674,17 @@ DD   = two-digit day of month (01 through 31)
                         The default <samp>step</samp> value for <samp>number</samp> inputs is <samp>1</samp> 
                         (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#attr-step">MDN</a>).
                     </p>
-                    <p>
-                        <b>Warning:</b> For most browsers, date inputs are buggy in their implementation of <samp>step</samp>,
-                        so this attribute would likely have no effect. Therefore, we don't set the step attribute
-                        for date inputs.
-                    </p>
-                    <p>
-                        See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date#Setting_maximum_and_minimum_dates">the MDN article</a>
-                        for more information.
-                    </p>
+                    <div class="bs-callout bs-callout-warning">
+                        <p>
+                            <i class="fas fa-exclamation-triangle"></i> <b>Warning:</b> For most browsers, date inputs are buggy in their implementation of <samp>step</samp>,
+                            so this attribute would likely have no effect. Therefore, we don't set the step attribute
+                            for date inputs.
+                        </p>
+                        <p>
+                            See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date#Setting_maximum_and_minimum_dates">the MDN article</a>
+                            for more information.
+                        </p>
+                    </div>
                 </dd>
 
                 <dt id="prompt-option-input-maxlength" class="topic-anchor topic-subsection-header h4">maxlength</dt>
@@ -1824,7 +1826,7 @@ dialog.init(function(){
             <div class="topic-subsection-content">
                 <pre class="h5 py-3 px-4 mb-4 bg-light border"><code>bootbox.setLocale(<span class="text-primary">String</span> <b>name</b>);</code></pre>
                 <p>
-                    Allows the user to select a locale rather than using <samp>setDefaults("locale", ...)</samp>.
+                    Allows the user to select a locale rather than using <samp>setDefaults('locale', ...)</samp>.
                 </p>
                 <p>
                     The locale settings are used to translate the three standard button labels: OK, CONFIRM, CANCEL
@@ -1902,10 +1904,10 @@ dialog.init(function(){
                         <b>All</b> Bootstrap modals (and therefore Bootbox modals), unlike native alerts, confirms, or prompts,
                         are
                         <a href="https://getbootstrap.com/docs/4.4/components/modal/#methods">asynchronous</a>; meaning,
-                        the events which Bootstrap generates are <b>non-blocking</b> events. <b>
-                            Because of this limitation,
-                            code that should not be evaluated until a user has dismissed your dialog must be called within the
-                            callback function of the dialog.
+                        the events which Bootstrap generates are <b>non-blocking</b> events. 
+                        <b>
+                            Because of this limitation, code that should not be evaluated until a user has dismissed your dialog 
+                            must be called within the callback function of the dialog.
                         </b>
                     </p>
                 </div>
@@ -1913,7 +1915,7 @@ dialog.init(function(){
     
             <div class="topic-subsection">
                 <h3 class="text-danger topic-subsection-header topic-anchor" id="note-multiple-modals">
-                    <i class="fas fa-ban text-muted"></i>
+                    <i class="fas fa-window-restore text-muted"></i>
                     Multiple open modals are not supported
                 </h3>
                 <div class="topic-subsection-content">
